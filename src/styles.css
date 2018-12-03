@@ -1,1 +1,68 @@
 /* You can add global styles to this file, and also import other style files */
+@import url(https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700,800);
+@import url(https://fonts.googleapis.com/css?family=Oxygen);
+
+header {
+    padding-top: 2rem;
+    padding-bottom: calc(10rem - 56px);
+    min-height: calc(100vh);
+    background-image: url("./assets/images/img1.jpg");
+    /* background-position: center center; */
+    background-size: cover;
+  }
+
+.primaryColor{
+    background-color:#4a5061 !important
+}
+.secundaryColor{
+    background-color:#e05c2a !important
+}
+.tertiaryColor{
+    background-color:#272b36 !important
+}
+.textGeneral{
+    color: white !important
+}
+.textoutstanding{
+    color: #e05c2a !important 
+}
+
+.fontTitles {
+    font-family: 'Montserrat';
+    font-style: normal;
+}
+
+.fontTGeneral {
+    font-family:'Oxygen';
+    font-style: normal;
+}
+
+.letterTitles{
+    font-weight: 800;
+    font-size: 39px;
+}
+
+.letterGeneral{
+    font-size: 18px;
+}
+
+.topGeneral{
+    margin-top: 20px
+}
+.logoSize{
+    margin-left: 41%;
+    width: 200px; 
+    height: 24px
+}
+
+.btn-radius{
+    border-radius: 0.5rem !important;
+    padding-top: 10px !important;
+    padding-bottom: 12px !important;
+    cursor: pointer;
+}
+
+.btn-radius:hover{
+   background-color: #272b36 !important
+}
+
