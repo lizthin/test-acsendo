@@ -26,3 +26,61 @@
     </div>
   </div>
 </section>
+<section id="recommendation" class="secundaryColor">
+  <div class="container">
+    <div class="row justify-content-center text-center">
+      <div class="col-10">
+        <label class="fontTGeneral textGeneral letterGeneral bigFont">Evalúe el desempeño de su equipo y cree planes de actividades</label>
+      </div>
+      <div class="col-11">
+        <label class="fontTGeneral textGeneral letterGeneral bigFont">aumentar la satisfacción laboral y la productividad de sus colaboradores.</label>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="competitions">
+  <div class="container-fluid">
+    <div class="row text-right justify-content-center">
+      <div class="col-11">
+        <h1 class="fontTitles">COMPETENCIAS 360º</h1>
+      </div>
+    </div>
+    <div class="row justify-content-center" style="margin-top: 10px">
+      <div class="col-12" style="margin-right: 160px">
+        <div class="row justify-content-end">
+          <div class="col-4" style="border: 3px solid #e05c2a">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-7 align-self-start">
+        <div class="position">
+          <img src="../../assets/images/pc.png" style="width: 100%;">
+        </div>
+      </div>
+      <div class="col-5" style="margin-top: 40px">
+        <div class="row justify-content-start">
+          <div class="col-12">
+            <p class="letterGeneral fontTGeneral">Descubra si los comportamientos y competencias de sus colaboradores están alineadas con los cargos que ocupan.</p>
+          </div>
+        </div>
+        <div class="row" *ngFor="let competition of arrayCompetition; let marginMore = odd; let margin = even" style="margin-top: 30px">
+          <div class="col-10" [ngClass]="{margin: margin, marginMore: marginMore}">
+            <div class="row">
+              <div class="col-2">
+                <div style="width: 100px">
+                  <img src={{competition.img}} class="img-margin">
+                </div>
+              </div>
+              <div class="col-10">
+                <h3 class="textoutstanding fontTGeneral">{{competition.tittle}}</h3>
+                <p class="fontTGeneral letterGeneral">{{competition.description}}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

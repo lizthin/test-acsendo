@@ -64,6 +64,9 @@ header {
 .smallFont{
     font-size: 15px;
 }
+.bigFont{
+    font-size: 28px; 
+}
 .topGeneral{
     margin-top: 20px
 }
@@ -90,3 +93,10 @@ header {
 width: 130px   
 }
 
+.margin{
+    margin-left:0px; 
+} 
+
+.marginMore{
+    margin-left:50px; 
+}

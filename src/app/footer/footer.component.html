@@ -1,9 +1,97 @@
-<div id="footer_general" class="top-content-type general-footer">
-  <div class="pull-right">
-    Acsendo
+<div class="container-fluid tertiaryColor ">
+  <div class="row text-center justify-content-center">
+    <div class="col-4">
+      <h2 class="textGeneral fontTGeneral">Programar Demostración</h2>
+    </div>
   </div>
-  <div class="pull-left">
-    <strong>{{nameEnterprise}}</strong>
-    | 2018
+  <div class="row text-center justify-content-center" style="margin-top: 80px">
+    <div class="col-6">
+      <p class="textGeneral fontTGeneral letterGeneral">Cúentenos un poco acerca de su empresa y sus necesidades y uno de nuestros representantes lo contactará para programar
+        la demostración del sistema.
+      </p>
+    </div>
+  </div>
+  <form [formGroup]="formAcsendo" class="row justify-content-center" (ngSubmit)="newDemo(formAcsendo.value)">
+    <div class="col-4">
+      <div class="row">
+        <div class="col-12">
+          <label class="textGeneral fontTGeneral topGeneral">NOMBRE</label>
+          <input type="text" name="name" class="form-control" [formControl]="formAcsendo.controls['name']">
+        </div>
+        <div class="col-12">
+          <label class="textGeneral fontTGeneral topGeneral">EMAIL CORPORATIVO</label>
+          <input type="text" name="email" class="form-control" [formControl]="formAcsendo.controls['email']">
+        </div>
+        <div class="col-12">
+          <label class="textGeneral fontTGeneral topGeneral">EMPRESA</label>
+          <input type="text" name="company" class="form-control" [formControl]="formAcsendo.controls['company']">
+        </div>
+        <div class="col-12">
+          <label class="textGeneral fontTGeneral topGeneral">CARGO</label>
+          <select name="employee" class="form-control" [formControl]="formAcsendo.controls['employee']">
+            <option value="1">Seleccione</option>
+            <option value="2">Gerente de proyecto</option>
+            <option value="3">Auxiliar Administrativo</option>
+            <option value="4">Gestor de Compras</option>
+          </select>
+        </div>
+        <div class="col-12">
+          <label class="textGeneral fontTGeneral topGeneral">PRODUCTO DE INTERÉS</label>
+          <select name="product" class="form-control" [formControl]="formAcsendo.controls['product']">
+            <option value="1">Seleccione</option>
+            <option value="2">Evaluación de desempeño</option>
+            <option value="3">Capacitación de personal</option>
+            <option value="4">Objetivos de evaluaciones</option>
+          </select>
+        </div>
+        <div class="col-12">
+          <label class="textGeneral fontTGeneral topGeneral">PAÍS</label>
+          <select name="country" class="form-control" [formControl]="formAcsendo.controls['country']">
+            <option value="1">Seleccione</option>
+            <option value="2">Colombia</option>
+            <option value="3">Brasil</option>
+            <option value="4">Bolivia</option>
+          </select>
+        </div>
+        <div class="col-12">
+          <label class="textGeneral fontTGeneral topGeneral">NÚMERO DE EMPLEADOS</label>
+          <select name="number_employee" class="form-control" [formControl]="formAcsendo.controls['number_employee']">
+            <option value="1">0 - 50</option>
+            <option value="2">50 - 100</option>
+            <option value="3">100 - 500</option>
+            <option value="4">500 +</option>
+          </select>
+        </div>
+        <div class="col-12">
+          <label class="textGeneral fontTGeneral topGeneral">CONTACTO TELEFÓNICO</label>
+          <div class="row">
+            <div class="col-4">
+              <select name="number_indicative" class="form-control" [formControl]="formAcsendo.controls['number_indicative']">
+                <option value="1">351</option>
+                <option value="2">357</option>
+                <option value="3">358</option>
+                <option value="4">359</option>
+              </select>
+            </div>
+            <div class="col-8">
+              <input type="text" name="number_phone" class="form-control" [formControl]="formAcsendo.controls['number_phone']">
+            </div>
+          </div>
+        </div>
+        <div class="col-12">
+          <label class="textGeneral fontTGeneral topGeneral">CUÉNTENOS LO QUE ESTÁ BUSCANDO PARA QUE PODAMOS AYUDARLE MEJOR</label>
+          <textarea class="form-control" maxlength="500" type="text" rows="5" name="reason_lookFor" [formControl]="formAcsendo.controls['reason_lookFor']"></textarea>
+        </div>
+      </div>
+    </div>
+  </form>
+  <div class="row justify-content-center text-center" style="margin-top:60px">
+    <div class="col-4">
+      <div class="row text-center">
+        <div class="col-12">
+          <button type="button" class="btn btn-md textGeneral secundaryColor btn-radius fontTGeneral">Programar Demo</button>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
