@@ -1,3 +1,28 @@
-<p>
-  body works!
-</p>
+<section id="inicialBenefits" class="tertiaryColor">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 text-center fontTGeneral letterGeneral textGeneral">
+        <h4>Las mejores herramientas para la gestión de su Talento Humano</h4>
+        <h4> en un sólo lugar</h4>
+      </div>
+    </div>
+    <div class="row justify-content-center" style="margin-top: 38px">
+      <div class="col-10">
+        <div class="row">
+          <div class="col-3 text-center textGeneral smallFont" *ngFor="let printContainer of arrayIcon">
+            <div class="row ">
+              <div class="col-12" style="margin-left: 38px">
+                <div class="rounded-circle">
+                  <img src={{printContainer.img}} style="width: 100%">
+                </div>
+              </div>
+              <div class="col-9" style="margin-top: 25px; margin-left: 28px">
+                <label>{{printContainer.description}}</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -11,6 +11,22 @@ header {
     background-size: cover;
   }
 
+  .h5, h5 {
+    font-size: 1.10rem;
+}
+
+.h4, h4 {
+    font-size: 1.65rem !important;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-bottom: .5rem;
+    font-family:'Oxygen';
+    font-weight: 600 !important;
+    line-height: 1.2;
+    color: inherit;
+}
+
 .primaryColor{
     background-color:#4a5061 !important
 }
@@ -45,7 +61,9 @@ header {
 .letterGeneral{
     font-size: 18px;
 }
-
+.smallFont{
+    font-size: 15px;
+}
 .topGeneral{
     margin-top: 20px
 }
@@ -64,5 +82,11 @@ header {
 
 .btn-radius:hover{
    background-color: #272b36 !important
+}
+#inicialBenefits{
+    border-top: 7px solid #4a5061
+}
+.rounded-circle{
+width: 130px   
 }
 
