@@ -12,4 +12,8 @@ export class HeaderComponent implements OnInit {
   ngOnInit() {
   }
 
+  srolling() {
+      window.scrollTo(0, document.getElementById('footer').getBoundingClientRect().top);
+  }
+
 }

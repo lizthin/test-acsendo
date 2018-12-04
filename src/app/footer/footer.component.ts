@@ -34,4 +34,7 @@ export class FooterComponent implements OnInit {
   ngOnInit() {
   }
 
+  newDemo(form){
+
+  }
 }
