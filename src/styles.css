@@ -40,7 +40,7 @@ header {
     color: white !important
 }
 .textoutstanding{
-    color: #e05c2a !important 
+    color: #e05c2a !important
 }
 
 .fontTitles {
@@ -65,14 +65,14 @@ header {
     font-size: 15px;
 }
 .bigFont{
-    font-size: 28px; 
+    font-size: 28px;
 }
 .topGeneral{
     margin-top: 20px
 }
 .logoSize{
     margin-left: 41%;
-    width: 200px; 
+    width: 200px;
     height: 24px
 }
 
@@ -90,13 +90,101 @@ header {
     border-top: 7px solid #4a5061
 }
 .rounded-circle{
-width: 130px   
+width: 130px
 }
 
 .margin{
-    margin-left:0px; 
-} 
+    margin-left:0px;
+}
 
 .marginMore{
-    margin-left:50px; 
+    margin-left:50px;
+}
+.left-icons{
+    margin-left: 38px
+}
+
+.left-description{
+    margin-top: 25px;
+    margin-left: 28px
+}
+
+.position{
+    width: 891px; margin-left: -162px; margin-top: -54px;
+}
+
+
+@media (max-width: 1100px)  and (max-height: 800px) {
+    .left-description {
+        margin-left: 45px;
+    }
+
+    .position {
+        width: 710px;
+        margin-left: -162px;
+        margin-top: 129px;
+    }
+}
+
+@media (max-width: 800px)  and (max-height: 1100px) {
+    .logoSize {
+        margin-left: 34%;
+        width: 200px;
+        height: 24px;
+    }
+    .left-icons{
+        margin-left: 65px
+    }
+    .top-icon {
+        margin-top: 30px;
+    }
+
+    /* .position {
+        width: 816px;
+        margin-left: -162px;
+        margin-top: 129px;
+    } */
+}
+
+@media only screen and (max-width: 830px)  and (max-height: 500px) {
+
+}
+
+@media only screen and (max-width: 450px)  and (max-height: 850px) {
+    .left-icons{
+        margin-left: 80px
+    }
+    .left-description {
+        margin-left: 40px;
+    }
+
+    .position {
+        width: 385px;
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (max-width: 450px)  and (max-height: 800px) {
+    .logoSize {
+        margin-left: 25%;
+    }
+
+    .left-icons{
+        margin-left: 90px
+    }
+
+    .left-description {
+        margin-left: 45px;
+    }
+
+    .top-icon {
+        margin-top: 30px;
+    }
+
+    .position {
+        width: 385px;
+        margin-left: 0px;
+        margin-top: 10px;
+    }
 }
